@@ -15,30 +15,30 @@
             Create an account
             <p>It's quick and easy</p>
          </div>
-         <form action="#" class="form-singin">
+         <form action="#" class="form-singin" onsubmit="return validateForm();">
             <div class="field-singin">
                <input type="text" id="userId" required>
-               <label for="">First Name</label>
+               <label for="userId">First Name</label>
             </div>
 
             <div class="field-singin">
                <input type="text" id="LastName" required>
-               <label for="">Last Name</label>
+               <label for="LastName">Last Name</label>
             </div>
 
             <div class="field-singin">
                <input type="email" id="Email" required>
-               <label for="">Email Address</label>
+               <label for="Email">Email Address</label>
             </div>
 
             <div class="field-singin">
                <input type="password" id="password" required>
-               <label for="">Password</label>
+               <label for="password">Password</label>
             </div>
 
             <div class="field-singin">
                <input type="password" id="confirm-password" required>
-               <label for="">Confirm Password</label>
+               <label for="confirm-password">Confirm Password</label>
             </div>
 
             <div class="content-singup">
@@ -55,53 +55,52 @@
             </div>
 
             <div class="signup-link">
-               Already have a account?<a href="login.html"> Login Now</a>
+               Already have an account?<a href="login.html"> Login Now</a>
             </div>
          </form>
       </div>
    </div>
    <script src="QR.js"> </script>
    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-   const BtnSubmit = document.getElementById('BtnSubmit'); 
+      document.addEventListener('DOMContentLoaded', function () {
+         const BtnSubmit = document.getElementById('BtnSubmit');
 
-   const emailValid = (email) => {
-      const emailRegex = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
-      return emailRegex.test(email.toLowerCase());
-   };
+         const emailValid = (email) => {
+            const emailRegex = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
+            return emailRegex.test(email.toLowerCase());
+         };
 
-   const validate = () => {
-      const emrin = document.getElementById('emri');
-      const Mbiemri = document.getElementById('LastName');
-      const emailin = document.getElementById('Email');
+         function validateForm() {
+            const emrin = document.getElementById('userId').value;
+            const Mbiemri = document.getElementById('LastName').value;
+            const emailin = document.getElementById('Email').value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirm-password").value;
 
-      if (emrin.value === "") {
-         alert("Ju lutem shtoni emrin e plote.");
-         emrin.focus();
-         return false;
-      }
-      if (Mbiemri.value === "") {
-         alert("Ju lutem shtoni mbiemrin e plote.");
-         Mbiemri.focus();
-         return false;
-      }
-      if (emailin.value === "") {
-         alert("Ju lutem shtoni emailin e plote.");
-         emailin.focus();
-         return false;
-      }
-      if (!emailValid(emailin.value)) {
-         alert("Ju lutem te shtoni nje email valid.");
-         emailin.focus();
-         return false;
-      }
+            if (password !== confirmPassword) {
+               alert("Passwords do not match");
+               return false;
+            }
 
-      const myUrl = "login.html";
-      window.location.href = myUrl;
-   };
+            if (emrin === "" || Mbiemri === "" || emailin === "" || password === "") {
+               alert("Please fill in all the fields.");
+               return false;
+            }
 
-   BtnSubmit.addEventListener('click', validate);
-});
+            if (!emailValid(emailin)) {
+               alert("Please enter a valid email.");
+               document.getElementById('Email').focus();
+               return false;
+            }
+
+            const myUrl = "login.html";
+            window.location.href = myUrl;
+
+            return true;
+         }
+
+         BtnSubmit.addEventListener('click', validateForm);
+      });
    </script>
 </body>
 
