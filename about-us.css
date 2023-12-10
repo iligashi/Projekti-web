@@ -119,7 +119,7 @@ h2 {
   text-align: center;
   font-family: cursive;
   margin-bottom: 20px;
-  color: #427777e0;
+  color: #ffffff;
 }
 
 .slider {
@@ -146,12 +146,12 @@ h2 {
 }
 
 .slide img {
-  width: 100%;
+  width: 1000px;
+  max-height: 400px;
   height: auto;
 }
 p {
-  font-family: cursive;
-  /* color: #427777e0; */
+  font-family: "Work sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 img {
   border-radius: 10px;
