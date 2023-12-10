@@ -99,7 +99,9 @@
     margin-top: 180px;
     cursor: pointer;
  }
-
+ .secure :hover {
+    color: darkblue;
+ }
 
  .svg {
      margin-left: 20px;
