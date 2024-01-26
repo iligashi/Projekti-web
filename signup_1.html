@@ -6,6 +6,7 @@
    <meta charset="utf-8">
    <title>Sign IN | QR CODE</title>
    <link rel="stylesheet" href="signup.css">
+   <link rel="stylesheet" href="register.php">
 </head>
 
 <body id="sign_up">
@@ -15,30 +16,30 @@
             Create an account
             <p>It's quick and easy</p>
          </div>
-         <form action="#" class="form-singin" onsubmit="return validateForm();">
+         <form action="register.php" class="form-singin" method="POST">
             <div class="field-singin">
-               <input type="text" id="userId" required>
-               <label for="userId">First Name</label>
+               <input type="text" required name="fname">
+               <label for="">First Name</label>
             </div>
 
             <div class="field-singin">
-               <input type="text" id="LastName" required>
-               <label for="LastName">Last Name</label>
+               <input type="text" required name="lname">
+               <label for="">Last Name</label>
             </div>
 
             <div class="field-singin">
-               <input type="email" id="Email" required>
-               <label for="Email">Email Address</label>
+               <input type="email" required name="emaili">
+               <label for="">Email Address</label>
             </div>
 
             <div class="field-singin">
-               <input type="password" id="password" required>
-               <label for="password">Password</label>
+               <input type="password" required name=" psw">
+               <label for="">Password</label>
             </div>
 
             <div class="field-singin">
-               <input type="password" id="confirm-password" required>
-               <label for="confirm-password">Confirm Password</label>
+               <input type="password" required name="cpsw">
+               <label for="">Confirm Password</label>
             </div>
 
             <div class="content-singup">
@@ -51,11 +52,11 @@
                </div>
             </div>
             <div class="field-singin">
-               <input type="submit" id="BtnSubmit" value="Sign Up">
+               <input type="submit" value="Sign Up"  name="register">
             </div>
 
             <div class="signup-link">
-               Already have an account?<a href="login.html"> Login Now</a>
+               Already have a account?<a href="login.html"> Login Now</a>
             </div>
          </form>
       </div>
@@ -105,3 +106,5 @@
 </body>
 
 </html>
+
+
