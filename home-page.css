@@ -4,6 +4,7 @@
      background-image: url(https://c.wallhere.com/photos/0c/ff/black_background_simple_minimalism_digital_art-1616665.jpg!d);
      background-repeat: no-repeat;
      background-size: cover;
+     margin: 0;
  }
 
  .egoditor-logo__text {
@@ -24,6 +25,7 @@
  ul,
  li {
      display: flex;
+     flex-wrap: nowrap;
      /* justify-content: space-around; */
      width: 100%;
      font-weight: bold;
@@ -44,6 +46,13 @@
      display: flex;
      align-items: center;
      left: 25px;
+     justify-content: space-between;
+     box-shadow: 0 .5rem 1rem #a6a4a426!important;
+     padding: 20px;
+ }
+ .nav-login-signup{
+    display: flex;
+    width: 60%;
  }
 
  .login_button {
@@ -102,9 +111,9 @@
      cursor: pointer;
  }
 
- .secure :hover {
+ /* .secure :hover {
      color: darkblue;
- }
+ } */
 
  .svg {
      margin-left: 20px;
