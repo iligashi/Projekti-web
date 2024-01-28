@@ -16,32 +16,26 @@
             Create an account
             <p>It's quick and easy</p>
          </div>
-         <form action="register.php" class="form-singin" method="POST">
+         <form class="form-singin" id="signup-form" name="signupForm" action="insert.php"  method="POST">
             <div class="field-singin">
-               <input type="text" required name="fname">
+               <input type="text" required name="name">
                <label for="">First Name</label>
             </div>
 
             <div class="field-singin">
-               <input type="text" required name="lname">
+               <input type="text" required name="surname">
                <label for="">Last Name</label>
             </div>
 
             <div class="field-singin">
-               <input type="email" required name="emaili">
+               <input type="email" required name="email">
                <label for="">Email Address</label>
             </div>
 
             <div class="field-singin">
-               <input type="password" required name=" psw">
+               <input type="password" required name="password">
                <label for="">Password</label>
             </div>
-
-            <div class="field-singin">
-               <input type="password" required name="cpsw">
-               <label for="">Confirm Password</label>
-            </div>
-
             <div class="content-singup">
                <div class="checkbox">
                   <input type="checkbox" id="remember-me">
@@ -51,12 +45,10 @@
                   <a href="#">Forgot password?</a>
                </div>
             </div>
-            <div class="field-singin">
-               <input type="submit" value="Sign Up"  name="register">
-            </div>
+            <button type="submit" class="field-singin">Sign Up</button>
 
             <div class="signup-link">
-               Already have a account?<a href="login.html"> Login Now</a>
+               Already have a account?<a href="login.php"> Login Now</a>
             </div>
          </form>
       </div>
