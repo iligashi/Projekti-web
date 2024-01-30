@@ -29,12 +29,15 @@ body {
 .nav-list,
 ul,
 li {
-    display: flex;
-    /* justify-content: space-around; */
-    width: 100%;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content:right;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 35px;
+  margin: 5px;
 }
 #content_home_page{
    display: none;
@@ -45,10 +48,13 @@ li {
     /* position: relative; */
     white-space: nowrap;
     width: 100%;
-    height: 40px;
+    height: 70px;
     display: flex;
     align-items: center;
     left: 25px;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1rem #a6a4a426!important;
+    padding: 20px;;
 }
 
 .login_button {
@@ -85,6 +91,7 @@ li {
     font-weight: bold;
     border-width: thick;
     transition: 0.2 ease;
+
 
 
 }
