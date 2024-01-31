@@ -7,13 +7,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Scanova Log in form</title>
   <link rel="stylesheet" href="login.css">
+  <style>
+    .h1{
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body id="login">
   <div class="container flex">
     <div class="scannova-page flex">
       <div class="text-scanova-login">
-        <h1>Scanova</h1>
+      <a href="../home-page.html" class="h1"><h1>Scanova</h1></a> 
         <p>Create the best QR-code ever </p>
         <p> Around Scanova</p>
       </div>
