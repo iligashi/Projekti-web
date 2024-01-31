@@ -27,7 +27,7 @@
         </div>
         <hr>
         <div class="button-login1">
-          <a href="signup_1.html">Create new account</a>
+          <a href="signup_1.php">Create new account</a>
         </div>
       </form>
     </div>

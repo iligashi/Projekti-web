@@ -6,7 +6,7 @@
    <meta charset="utf-8">
    <title>Sign IN | QR CODE</title>
    <link rel="stylesheet" href="signup.css">
-   <link rel="stylesheet" href="register.php">
+   <!-- <link rel="stylesheet" href="register.php"> -->
 </head>
 
 <body id="sign_up">
@@ -45,7 +45,7 @@
                   <a href="#">Forgot password?</a>
                </div>
             </div>
-            <button type="submit" class="field-singin">Sign Up</button>
+            <button type="submit" class="field-singin" id="BtnSubmit">Sign Up</button>
 
             <div class="signup-link">
                Already have a account?<a href="login.php"> Login Now</a>
@@ -53,7 +53,7 @@
          </form>
       </div>
    </div>
-   <script src="QR.js"> </script>
+   <script src="../QR.js"> </script>
    <script>
       document.addEventListener('DOMContentLoaded', function () {
          const BtnSubmit = document.getElementById('BtnSubmit');
