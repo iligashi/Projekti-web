@@ -27,7 +27,7 @@ if ($conn->connect_error) {
             header('Location: ../admin-dashboard/AdminDashboard.php');
         } elseif( isset($res) && ($res == 'user')) {
             setcookie("logedInUser", $userId, time()+3600, '/');
-            header('Location: ../home-page.html');
+            header('Location: ../generateQRCode.html');
         } else {
             echo "<div class=\"non-login-screen\">";
             echo "<p>Please enter valid email and password</p>";

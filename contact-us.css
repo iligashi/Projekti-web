@@ -13,17 +13,17 @@ body {
 }
 
 .egoditor-logo__text {
-    /* position: absolute; */
-    color: white;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1;
-    top: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: -.05em;
-    padding: 0%;
-    margin: 0%;
-    cursor: pointer;
+  /* position: absolute; */
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  top: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: -.05em;
+  padding: 0%;
+  margin: 0%;
+  cursor: pointer;
 }
 
 .nav-list,
@@ -31,7 +31,7 @@ ul,
 li {
   display: flex;
   flex-wrap: nowrap;
-  justify-content:right;
+  /* justify-content: space-around; */
   width: 100%;
   font-weight: bold;
   cursor: pointer;
@@ -39,9 +39,10 @@ li {
   padding: 35px;
   margin: 5px;
 }
-#content_home_page{
-   display: none;
-   position: absolute;
+
+#content_home_page {
+  display: none;
+  position: absolute;
 }
 
 .head_title {
@@ -59,19 +60,19 @@ li {
 
 .login_button {
 
-    border: 0px;
-    background-color: #fff9f900;
-    border-color: #1B294B;
-    color: white;
-    font-size: larger;
-    font-weight: bold;
+  border: 0px;
+  background-color: #fff9f900;
+  border-color: #1B294B;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
 
 
 }
 
 .head_nav {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .login_button:hover {
