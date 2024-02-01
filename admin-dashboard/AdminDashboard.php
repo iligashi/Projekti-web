@@ -30,7 +30,44 @@
       <th>Last Name</th>
       <th>Email</th>
     </tr>
-    <tr>
+    <?php 
+      $host = "localhost";
+      $dbUsername = "root";
+      $dbPassword = "";
+      $dbname = "db";
+      
+      $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
+      if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+      
+      $sql = "SELECT * FROM user";
+      $result = $conn->query($sql);
+      if ($result) {
+        if ($result->num_rows > 0) {
+          while ($row = $result->fetch_assoc()) {
+            echo "
+              <tr>
+                <td>" . $row['name'] . "</td>
+                <td>" . $row['surname'] . "</td>
+                <td>" . $row['email'] . "</td>
+              </tr>";
+          }
+        } else {
+            echo "No results found.";
+        }
+        
+          $result->free();
+      } else {
+          $error_message = "Error: " . $sql . "<br>" . $conn->error;
+          error_log($error_message); // Log the error
+          die($error_message);
+      }
+      
+      $conn->close();
+    
+    ?>
+    <!-- <tr>
       <td>Jill</td>
       <td>Smith</td>
       <td>jill@gmail.com</td>
@@ -44,7 +81,7 @@
       <td>Adam</td>
       <td>Johnson</td>
       <td>adam@gmail.com</td>
-    </tr>
+    </tr> -->
   </table>
 </div>
 
@@ -52,25 +89,47 @@
 <h2>User Messages</h2>
 <table class="w3-table-all">
     <tr class="w3-light-grey">
-      <th>First Name</th>
-      <th>Last Name</th>
+      <th>Name</th>
+      <th>Email</th>
       <th>Message</th>
     </tr>
-    <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>test</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>test</td>
-    </tr>
-    <tr>
-      <td>Adam</td>
-      <td>Johnson</td>
-      <td>test</td>
-    </tr>
+    <?php 
+      $host = "localhost";
+      $dbUsername = "root";
+      $dbPassword = "";
+      $dbname = "db";
+      
+      $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
+      if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+      }
+      
+      $sql = "SELECT * FROM messages";
+      $result = $conn->query($sql);
+      if ($result) {
+        if ($result->num_rows > 0) {
+          while ($row = $result->fetch_assoc()) {
+            echo "
+              <tr>
+                <td>" . $row['name'] . "</td>
+                <td>" . $row['email'] . "</td>
+                <td>" . $row['message'] . "</td>
+              </tr>";
+          }
+        } else {
+            echo "No results found.";
+        }
+        
+          $result->free();
+      } else {
+          $error_message = "Error: " . $sql . "<br>" . $conn->error;
+          error_log($error_message); // Log the error
+          die($error_message);
+      }
+      
+      $conn->close();
+    
+    ?>
   </table>
 </div>
 
