@@ -27,11 +27,11 @@
 
         <div style="display: flex">
           <button class="login_button">
-            <a href="/Projekti-web/login-signup/login.php" style="text-decoration: none; color: white">LOGIN</a>
+            <a href="login-signup/login.php" style="text-decoration: none; color: white">LOGIN</a>
           </button>
 
           <button class="signup_button" onclick="sign_up_button()" id="sign_up_button">
-            <a href="/Projekti-web/login-signup/signup_1.html" style="text-decoration: none; color: white">SIGN UP</a>
+            <a href="login-signup/signup_1.php" style="text-decoration: none; color: white">SIGN UP</a>
           </button>
         </div>
       </div>
@@ -39,7 +39,7 @@
   </header>
   <div class="container-contactus" style=" margin-top: 110px;">
     <h2 style="color: rgb(255, 255, 255) ;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contact Us</h2>
-    <form action="#">
+    <form name="contactUsForm" action="contactUsDB.php"  method="POST">
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -53,6 +53,14 @@
         <textarea id="message" name="message" placeholder="Your message" rows="6" required></textarea>
       </div>
       <button class="buton" type="submit">Send</button>
+      <div style="text-align: center">
+        <?php 
+          if($_COOKIE['message']) {
+            echo "Message sent successfully";
+            setcookie('message', '', time() - 3600, '/');
+          }
+        ?>
+      </div>
     </form>
   </div>
 

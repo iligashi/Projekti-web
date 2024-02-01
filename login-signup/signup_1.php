@@ -86,7 +86,7 @@
                return false;
             }
 
-            const myUrl = "login.html";
+            const myUrl = "login.php";
             window.location.href = myUrl;
 
             return true;

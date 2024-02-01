@@ -28,7 +28,7 @@
         <div class="link-scanova-login">
           <button type="submit"  class="login">Login</button>
           <p id="invalid-username"></p>
-          <a href="#" class="forgot">Forgot password?</a>
+         
         </div>
         <hr>
         <div class="button-login1">
