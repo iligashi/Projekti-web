@@ -1,73 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - QR Code Generator</title>
+    <link rel="stylesheet" href="home-page.css" />
+    <link rel="stylesheet" href="about-us.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us - QR Code Generator</title>
-  <link rel="stylesheet" href="about-us.css" />
-</head>
+  <body>
+    <header>
+      <div class="head_nav" id="head_nav">
+        <div class="head_title">
+          <span class="egoditor-logo__text" onclick="scanova()" id="scanova"
+            >SCANOVA</span
+          >
+          <div class="nav-login-signup" style="display: flex">
+            <ul class="nav-list">
+              <li onclick="qr_codes()" id="qr_codes">QR CODES</li>
+              <li>
+                <a
+                  href="AboutUs.html"
+                  style="text-decoration: none; color: white"
+                  >ABOUT US</a
+                >
+              </li>
+              <li>
+                <a
+                  href="ContactUs.php"
+                  style="text-decoration: none; color: white"
+                  >CONTACT US</a
+                >
+              </li>
+              <!-- <li> <a href="/Projekti-web/admin-dashboard/AdminDashboard.php" style="text-decoration: none; color: white;">DASHBOARD</a></li> -->
+            </ul>
 
-<body>
-  <header>
-    <div id="head_nav">
-      <div class="head_title">
-        <span class="egoditor-logo__text" onclick="scanova()" id="scanova"> <a href="home-page.html"
-            style="text-decoration: none; color: white;">SCANOVA</a></span>
-        <div class="nav-login-signup" style="display: flex;">
-          <ul class="nav-list">
-            <li onclick="qr_codes()" id="qr_codes">QR CODES</li>
-            <li style="margin-left: -370px; margin-right: -370px"><a href="ContactUs.php"
-                style="text-decoration: none; color: white;">ABOUT US</a></li>
-            <li>CONTACT US</li>
-          </ul>
+            <div style="display: flex">
+              <button class="login_button">
+                <a
+                  href="/Projekti-web/login-signup/login.php"
+                  style="text-decoration: none; color: white"
+                >
+                  LOGIN</a
+                >
+              </button>
 
-
-          <div style="display: flex">
-            <button class="login_button">
-              <a href="/Projekti-web/login-signup/login.php" style="text-decoration: none; color: white">LOGIN</a>
-            </button>
-
-            <button class="signup_button" onclick="sign_up_button()" id="sign_up_button">
-              <a href="/Projekti-web/login-signup/signup_1.html" style="text-decoration: none; color: white">SIGN UP</a>
-            </button>
+              <button
+                class="signup_button"
+                onclick="sign_up_button()"
+                id="sign_up_button"
+              >
+                <a
+                  href="/Projekti-web/login-signup/signup_1.php"
+                  style="text-decoration: none; color: white"
+                >
+                  SIGN UP</a
+                >
+              </button>
+            </div>
           </div>
         </div>
       </div>
+    </header>
+    <div>
+      <p class="secure" style="color: white">
+        We make the best Qr codes in the simples way
+      </p>
     </div>
-  </header>
-  <div>
-    <p class="secure" style="color: white;">We make the best Qr codes in the simples way</p>
-  </div>
-  <div class="paragraph">
-    <p style="color: rgb(201, 196, 196);">
-      We’re on a mission to enable digital connections with every physical
-      object and place on the planet.
-    </p>
-  </div>
-  <img src="photo.jpeg" alt="">
-  <div class="container">
-    <h2>About Us</h2>
-    <div class="slider">
-      <div class="slide active">
-        <img src="https://nordvpn.com/wp-content/uploads/blog-social-how-to-scan-QR-code-1200x628-1.jpg"
-          alt="Image 1" />
-      </div>
-      <div class="slide">
-        <img src="https://history-computer.com/wp-content/uploads/2022/08/Scan-a-QR-code-header-scaled.jpg"
-          alt="Image 2" />
-      </div>
-      <div class="slide">
-        <img src="https://cdn.mos.cms.futurecdn.net/QjVmxuEvLwV9rdr9yBB4Th.jpg" alt="Image 3" />
-      </div>
+    <div class="paragraph">
+      <p style="color: rgb(201, 196, 196)">
+        We’re on a mission to enable digital connections with every physical
+        object and place on the planet.
+      </p>
     </div>
-    <p style="  font-family: cursive;">
-      Welcome to Scanova, your go-to QR code generator. Easily create customized QR codes for URLs, text, and more in
-      just a few clicks. Streamline your code creation with Scanova's user-friendly interface
-    </p>
-  </div>
+    <div class="container">
+      <h2>About Us</h2>
+      <div class="slider">
+        <div class="slide active">
+          <img
+            src="https://nordvpn.com/wp-content/uploads/blog-social-how-to-scan-QR-code-1200x628-1.jpg"
+            alt="Image 1"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://history-computer.com/wp-content/uploads/2022/08/Scan-a-QR-code-header-scaled.jpg"
+            alt="Image 2"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://cdn.mos.cms.futurecdn.net/QjVmxuEvLwV9rdr9yBB4Th.jpg"
+            alt="Image 3"
+          />
+        </div>
+      </div>
+      <p style="font-family: cursive">
+        Welcome to Scanova, your go-to QR code generator. Easily create
+        customized QR codes for URLs, text, and more in just a few clicks.
+        Streamline your code creation with Scanova's user-friendly interface
+      </p>
+    </div>
 
-  <script src="about-us.js"></script>
-</body>
-
+    <script src="about-us.js"></script>
+  </body>
 </html>
