@@ -9,34 +9,64 @@
 
   <title>Contact Us</title>
   <link rel="stylesheet" href="contact-us.css" />
+  <link rel="stylesheet" href="header.css">
 </head>
 
 <body>
   <header>
     <div class="head_nav" id="head_nav">
       <div class="head_title">
-        <span class="egoditor-logo__text" onclick="scanova()" id="scanova"><a href="home-page.html"
-            style="text-decoration: none; color: white;">SCANOVA</a></span>
-        <ul class="nav-list">
-          <li onclick="qr_codes()" id="qr_codes">QR CODES</li>
-          <li style="margin-left: -370px; margin-right: -370px"><a href="AboutUs.html"
-              style="text-decoration: none; color: white;">ABOUT US</a></li>
-          <li>CONTACT US</li>
-        </ul>
+        <span class="egoditor-logo__text" onclick="scanova()" id="scanova"
+          ><a href="home-page.html" style="color: white; text-decoration: none;">SCANOVA</a></span
+        >
+        <div class="nav-login-signup" style="display: flex">
+          <ul class="nav-list">
+            <li onclick="qr_codes()" id="qr_codes">QR CODES</li>
+            <li>
+              <a
+                href="AboutUs.html"
+                style="text-decoration: none; color: white"
+                >ABOUT US</a
+              >
+            </li>
+            <li>
+              <a
+                href="ContactUs.php"
+                style="text-decoration: none; color: white"
+                >CONTACT US</a
+              >
+            </li>
+            <!-- <li> <a href="/Projekti-web/admin-dashboard/AdminDashboard.php" style="text-decoration: none; color: white;">DASHBOARD</a></li> -->
+          </ul>
 
+          <div style="display: flex">
+            <button class="login_button">
+              <a
+                href="/Projekti-web/login-signup/login.php"
+                style="text-decoration: none; color: white"
+              >
+                LOGIN</a
+              >
+            </button>
 
-        <div style="display: flex">
-          <button class="login_button">
-            <a href="login-signup/login.php" style="text-decoration: none; color: white">LOGIN</a>
-          </button>
-
-          <button class="signup_button" onclick="sign_up_button()" id="sign_up_button">
-            <a href="login-signup/signup_1.php" style="text-decoration: none; color: white">SIGN UP</a>
-          </button>
+            <button
+              class="signup_button"
+              onclick="sign_up_button()"
+              id="sign_up_button"
+            >
+              <a
+                href="/Projekti-web/login-signup/signup_1.php"
+                style="text-decoration: none; color: white"
+              >
+                SIGN UP</a
+              >
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </header>
+
   <div class="container-contactus" style=" margin-top: 110px;">
     <h2 style="color: rgb(255, 255, 255) ;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contact Us</h2>
     <form name="contactUsForm" action="contactUsDB.php"  method="POST">
@@ -63,77 +93,6 @@
       </div>
     </form>
   </div>
-
-  <!-- <div style="display: flex">
-              <button class="login_button">
-                <a
-                  href="/Projekti-web/login-signup/login.php"
-                  style="text-decoration: none; color: white"
-                >
-                  LOGIN</a
-                >
-              </button>
-
-              <button
-                class="signup_button"
-                onclick="sign_up_button()"
-                id="sign_up_button"
-              >
-                <a
-                  href="/Projekti-web/login-signup/signup_1.php"
-                  style="text-decoration: none; color: white"
-                >
-                  SIGN UP</a
-                >
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> -->
-  <!-- <div class="container-contactus" style="margin-top: 110px">
-      <h2
-        style="
-          color: rgb(255, 255, 255);
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        "
-      >
-        Contact Us
-      </h2>
-      <form action="#">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your name"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your email"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Your message"
-            rows="6"
-            required
-          ></textarea>
-        </div>
-        <button class="buton" type="submit">Send</button>
-      </form>
-    </div> -->
-
 
   <div class="footer-dark">
     <footer>

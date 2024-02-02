@@ -37,14 +37,14 @@
                <label for="">Password</label>
             </div>
             <div class="content-singup">
-               <div class="checkbox">
+               <!-- <div class="checkbox">
                   <input type="checkbox" id="remember-me">
                   <label for="remember-me">Remember Me</label>
                </div>
-               <div class="pass-link">
+               <!-- <div class="pass-link">
                   <a href="#">Forgot password?</a>
-               </div>
-            </div>
+               </div> -->
+            </div> 
             <button type="submit" class="field-singin" id="BtnSubmit">Sign Up</button>
 
             <div class="signup-link">

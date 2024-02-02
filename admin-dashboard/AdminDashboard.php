@@ -67,21 +67,6 @@
       $conn->close();
     
     ?>
-    <!-- <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>jill@gmail.com</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>eve@gmial.com</td>
-    </tr>
-    <tr>
-      <td>Adam</td>
-      <td>Johnson</td>
-      <td>adam@gmail.com</td>
-    </tr> -->
   </table>
 </div>
 
