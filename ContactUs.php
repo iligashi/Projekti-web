@@ -20,7 +20,7 @@
           ><a href="home-page.html" style="color: white; text-decoration: none;">SCANOVA</a></span
         >
         <div class="nav-login-signup" style="display: flex">
-          <ul class="nav-list">
+          <ul class="nav-list flexed">
             <li onclick="qr_codes()" id="qr_codes">QR CODES</li>
             <li>
               <a
@@ -51,6 +51,7 @@
 
             <button
               class="signup_button"
+              style="width:88px"
               onclick="sign_up_button()"
               id="sign_up_button"
             >
