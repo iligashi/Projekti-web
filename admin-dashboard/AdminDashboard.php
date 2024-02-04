@@ -11,7 +11,6 @@
   <h3 class="w3-bar-item">Scanova Dashboard</h3>
   <a href="#" class="w3-bar-item w3-button" onclick="showUsers()">Users</a>
   <a href="#" class="w3-bar-item w3-button" onclick="showUserMessages()">User Messages</a>
-  <a href="#" class="w3-bar-item w3-button" onclick="showBlogForm()">Blog</a>
 </div>
 
 <!-- Page Content -->
