@@ -19,7 +19,7 @@
     <div class="scannova-page flex">
       <div class="text-scanova-login">
       <a href="../home-page.html" class="h1"><h1>Scanova</h1></a> 
-        <p>Create the best QR-code ever </p>
+        <p>Generate the best QR-code ever </p>
         <p> Around Scanova</p>
       </div>
       <form class="form-login" id="login-form" name="loginForm" action="logindata.php" method="POST">
